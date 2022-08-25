@@ -28,8 +28,6 @@ class MainActivity : ComponentActivity() {
             ProcessDeathTheme {
                 // A surface container using the 'background' color from the theme
 
-
-
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
@@ -66,13 +64,13 @@ class MainActivity : ComponentActivity() {
                                 Text(text = "Count2: ${counter2.value}")
                             }
 
-                            // Not saved after process death
+                            // NOT saved after process death
                             Button(
                                 onClick = {
                                     counter3.value++
                                 }
                             ) {
-                                Text(text = "Count2: ${counter3.value}")
+                                Text(text = "Count3: ${counter3.value}")
                             }
 
                             Text(text = "user: ${viewModel.user}")
